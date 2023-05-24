@@ -1,0 +1,7 @@
+name = "TyKNN"
+uuid = "bc2af3da-72cb-4ba7-9d9e-86007f9c5f45"
+authors = ["peacemo <carlchenxq@qq.com>"]
+version = "0.1.0"
+
+[deps]
+Distances = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
