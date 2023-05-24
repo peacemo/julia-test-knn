@@ -18,6 +18,25 @@
 
 ## 开发
 
-1. 一个算法一个文件，本次只有 KNN，因此源码位于 `[./TyKNN/src/TyKNN.jl](./TyKNN/src/TyKNN.jl)` 
+1. 一个算法一个文件，因此源码位于 `[./src/knn.jl](./src/knn.jl)` 
 
-2. 编写源代码，并
+2. 编写源代码，并将源码包含进模块 [./src/TyKNN.jl](./src/TyKNN.jl)
+
+    ```julia
+    module TyKNN
+
+    export knn
+    include("knn.jl")
+
+    end # module TyKNN
+    ```
+
+## 测试
+
+1. 创建 test 文件夹
+
+2. 创建 test 环境的 Project.toml: `pkg> activate ./test  &&  pkg> add [some deps]`
+
+3. 创建 `./test/runtests.jl`，编写测试代码
+
+4. 运行 pkg> test (REPL)
